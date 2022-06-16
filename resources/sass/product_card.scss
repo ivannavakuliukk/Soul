@@ -1,0 +1,472 @@
+$maxWidthContainer: 1050px;
+@import url(https://fonts.googleapis.com/css?family=Dancing+Script:regular,500,600,700);
+@import url(https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+._container{
+    max-width:$maxWidthContainer;
+    margin: 0 auto;
+}
+body{
+    background-color:#ECE9E4;
+    margin: 0 0 0 0;
+}
+.go_back{
+  &__container{
+    height: 60px;
+    display:flex;
+    align-items: center;
+  }
+}
+
+.card{
+  &__content{
+    display:flex;
+  }
+  &__images{
+    display: flex;
+  }
+  &__column1{
+    display:flex;
+    flex-direction: column;
+    margin-right: 30px;
+  }
+  .img2{
+    margin-top:14px;
+  }
+  &__info{
+    margin-left: 60px;
+  }
+  &__info__container{
+    border:1px solid #D6AB7E;
+    width:360px;
+    height: 630px;
+  }
+  &__describe{
+    padding-left: 20px;
+    padding-right: 20px;
+    display:flex;
+    flex-direction: column;
+    border-bottom:1px solid #D6AB7E
+  }
+  &__text{
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    margin-bottom: 17px;
+    margin-top: 0px;
+  }
+  &__name{
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 30px;
+    margin-bottom:17px;
+  }
+  &__sizes{
+    height: 78px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-bottom:1px solid #D6AB7E;
+    display:flex;
+    align-items: center;
+  }
+  &__buy{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  &__findsize{
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 20px;
+    text-decoration: underline;
+    margin-top:0px;
+    color:black;
+    &:hover{
+      text-decoration: none;
+    }
+  }
+  &__text1{
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    margin-top:20px;
+    margin-bottom:4px;
+  }
+  &__btn{
+    margin-top:35px;
+    border:solid;
+    border-color:#D18A39;
+    border-width: 2px;
+    border-radius:30px;
+    display:inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 51px;
+    width: 280px;
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 35px;
+    color:#D18A39;
+    text-decoration:none;
+    backdrop-filter: blur(4px);
+    background-color: #b8762c;
+    color: transparent;
+    text-shadow: 0px 2px 3px #ECE9E4;
+    -webkit-background-clip: text;
+      -moz-background-clip: text;
+          background-clip: text;
+    img{
+      margin-left:15px;
+      width:23px;
+    }
+  @media(min-width: 420px){
+    &:hover{
+      background-color: #9a6426;
+    }
+  }
+  }
+}
+.rec{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  margin-top:53px;
+  border-top:1px solid #D6AB7E;
+  border-bottom:1px solid #D6AB7E;
+  font-family: 'Raleway';
+  font-weight: 400;
+  font-size: 20px;
+  height: 56px;
+}
+.items{
+  &__container{
+    margin: 0 auto;
+  }
+}
+.show_more{
+  margin:0 auto;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  height: 56px;
+  width: 809.5px;
+  border-left: 1px solid #D6AB7E ;
+  border-right: 1px solid #D6AB7E ;
+  &__btn{
+    border:solid;
+    border-color:#D18A39;
+    border-width: 2px;
+    border-radius:30px;
+    display:inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 33px;
+    width: 203px;
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 35px;
+    color:#D18A39;
+    text-decoration:none;
+    backdrop-filter: blur(4px);
+    background-color: #b8762c;
+    color: transparent;
+    text-shadow: 0px 2px 3px #ECE9E4;
+    -webkit-background-clip: text;
+      -moz-background-clip: text;
+          background-clip: text;
+    img{
+      margin-left:15px;
+      width:23px;
+    }
+  @media(min-width: 420px){
+    &:hover{
+      background-color: #9a6426;
+    }
+  }
+  }
+}
+.retreat{
+  height: 60px;
+  border-top: 1px solid #D6AB7E ;
+  &__tab{
+    margin:0 auto;
+    height: 60px;
+    width: 1050px;
+    border-left: 1px solid #D6AB7E ;
+    border-right: 1px solid #D6AB7E ;
+  }
+}
+.footer {
+  background-color: #E1D8D1;
+  height: 460px;
+}
+
+.footer__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 64px;
+}
+
+@media screen and(max-width:1049px){
+  ._container{
+      width:960px;
+      margin: 0 auto;
+  }
+  .header{
+      &__icons{
+          margin-left:130px;
+      }
+  }
+  .card{
+    &__content{
+      flex-direction: column;
+    }
+    &__images{
+      margin: 0 auto;
+    }
+    &__column1{
+      margin-right: 50px;
+      img{
+        width:270px;
+      }
+      .img2{
+        margin-top: 40px;;
+      }
+    }
+    &__column2{
+      img{
+        height:734px;
+      }
+    }
+    &__info{
+      margin: 0 auto;
+      &__content{
+        width:600px;
+        margin:0 auto;
+      }
+      &__container{
+        width:737px;
+        height: 540px;
+        margin-top:50px;
+      }
+    }
+    &__buy{
+      display:flex;
+      flex-direction: column;
+    }
+    &__btn{
+      margin:0 auto;
+      margin-top:30px;
+    }
+  }
+  .retreat{
+    display:none;
+  }
+  .show_more{
+    border:none;
+  }
+  .rec_images{
+    justify-content: center;
+    .items{
+      margin-left:120px;
+      &__3{
+        display: none;
+      }
+    }
+  }
+}
+@media screen and(max-width:991px){
+  ._container{
+      width:720px;
+  }
+  .header{
+      &__search{
+          margin-left:100px;
+          width:320px;
+      }
+      &__icons{
+          margin-left:130px;
+      }
+      &__icon1{
+          margin-left:35px;
+      }
+  }
+  .card{
+    &__column1{
+      margin-right: 40px;
+      img{
+        width:270px;
+      }
+      .img2{
+        margin-top: 20px;;
+      }
+    }
+    &__column2{
+      img{
+        height:714px;
+      }
+    }
+    &__info{
+      &__content{
+        width:600px;
+        margin:0 auto;
+      }
+      &__container{
+        width:720px;
+        margin-top:30px;
+      }
+    }
+  }
+  .rec_images{
+    justify-content: center;
+    .items{
+      margin-left:0px;
+      &__3{
+        display: none;
+      }
+    }
+  }
+  .show_more{
+    width:100%;
+  }
+}
+@media screen and(max-width:767px){
+  ._container{
+      width: 540px;//dif180
+      text-align: center;
+  }
+  .header{
+      &__search{
+          margin-left:53px;
+          width:250px;
+      }
+      &__icons{
+          margin-left:65px;
+      }
+      &__icon1{
+          margin-left:0px;
+      }
+      &__text{
+          font-size:18px;
+      }
+  }
+  .card{
+    &__images{
+      flex-direction: column;
+    }
+    &__column1, &__column2{
+      margin: 0 auto;
+      img{
+        width:450px;
+      }
+    }
+    &__column2{
+      margin-top:20px;
+    }
+    &__info{
+      &__content{
+        width:400px;
+        margin:0 auto;
+      }
+      &__container{
+        width:540px;
+        height: 630px;
+        margin-top:30px;
+      }
+    }
+  }
+  .show_more{
+    height: 90px;
+    &__btn{
+      width:250px;
+      height: 40px;
+      font-size: 23px;
+    }
+  }
+  .footer{
+      &__content{
+        padding-top:0px;
+          flex-direction:row;
+          flex-wrap:wrap;
+      }
+      &__container{
+        background-color:#E1D8D1 ;
+    }
+  }
+}
+
+@media screen and(max-width: 575px){
+  ._container{
+      width:100%;
+  }
+  .header{
+      &__search{
+          margin-left: 10%;
+          width:35%;
+          height: 35px;
+      }
+      &__logo{
+          font-size:30px;
+      }
+      &__icons{
+          margin-left:15%;
+          img{
+              width:20px;
+          }
+      }
+      &__icon1{
+          display:none;
+      }
+      &__text{
+          font-size:13px;
+          width:40%;
+      }
+  }
+  .card{
+    &__column1, &__column2{
+      width:100%;
+      margin: 0 auto;
+      img{
+        width:100%;
+      }
+    }
+    &__column2{
+      margin-top:20px;
+    }
+    &__info{
+      &__content{
+        width:80%;
+        margin:0 auto;
+      }
+      &__container{
+        width:100%;
+        height: 700px;
+        margin-top:30px;
+      }
+    }
+    &__sizes{
+      a{
+        margin-right: 2px;
+      }
+    }
+  }
+  .show_more{
+    height: 90px;
+    &__btn{
+      width:250px;
+      height: 40px;
+      font-size: 23px;
+    }
+  }
+  .footer{
+      &__container{
+          background-color:#E1D8D1 ;
+      }
+  }
+}

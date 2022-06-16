@@ -1,0 +1,248 @@
+@import url(https://fonts.googleapis.com/css?family=Dancing+Script:regular,500,600,700);
+@import url(https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+body {
+  background-color: #ECE9E4;
+  margin: 0 0 0 0;
+}
+
+._container {
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+.go_back {
+  border-bottom: 1px solid #D6AB7E;
+}
+.go_back__container {
+  height: 58px;
+  display: flex;
+  align-items: center;
+}
+.go_back__content a {
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 20px;
+  color: black;
+  margin-right: 220px;
+}
+
+.catalogue {
+  border-bottom: 1px solid #D6AB7E;
+}
+.catalogue__content {
+  display: flex;
+}
+
+.menu__container {
+  width: 240px;
+}
+.menu__title1 {
+  display: flex;
+  align-items: center;
+  height: 56px;
+  border-bottom: 1px solid #D6AB7E;
+}
+.menu__title1 p {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+}
+.menu__links1 {
+  display: flex;
+  flex-direction: column;
+  padding-top: 5px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #D6AB7E;
+}
+.menu__links1 a {
+  color: black;
+  font-family: "Raleway";
+  font-weight: 300;
+  font-size: 22px;
+  text-decoration: none;
+  margin-top: 6px;
+}
+.menu__links1 a:hover {
+  text-decoration: underline;
+}
+.menu__title2 {
+  display: flex;
+  align-items: center;
+  height: 58px;
+  border-bottom: 1px solid #D6AB7E;
+}
+.menu__title2 p {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+}
+.menu__links2 {
+  display: flex;
+  flex-direction: column;
+  padding-top: 5px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #D6AB7E;
+}
+.menu__links2 a {
+  color: black;
+  font-family: "Raleway";
+  font-weight: 300;
+  font-size: 22px;
+  text-decoration: none;
+  margin-top: 6px;
+}
+.menu__links2 a:hover {
+  text-decoration: underline;
+}
+
+.page__nums {
+  border-right: 1px solid #D6AB7E;
+  border-left: 1px solid #D6AB7E;
+}
+.page__nums__content {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer {
+  margin-top: 65px;
+  background-color: #E1D8D1;
+  height: 460px;
+  width: 100%;
+}
+.footer__content {
+  display: flex;
+  justify-content: center;
+  padding-top: 64px;
+}
+
+@media screen and (max-width: 1049px) {
+  ._container {
+    width: 960px;
+  }
+  .header {
+    height: 250px;
+  }
+  .header__icons {
+    margin-left: 130px;
+  }
+  .catalogue .menu__links1 a, .catalogue .menu__links2 a {
+    font-size: 20px;
+  }
+  .catalogue .page__nums {
+    border-left: none;
+    border-right: none;
+  }
+}
+@media screen and (max-width: 991px) {
+  ._container {
+    width: 720px;
+  }
+  .header {
+    height: 230px;
+  }
+  .header__search {
+    margin-left: 100px;
+    width: 320px;
+  }
+  .header__icons {
+    margin-left: 130px;
+  }
+  .header__icon1 {
+    margin-left: 35px;
+  }
+  .catalogue__content {
+    flex-direction: column;
+  }
+  .catalogue .menu__container {
+    width: 720px;
+  }
+  .catalogue .menu__title1, .catalogue .menu__title2 {
+    border-bottom: none;
+  }
+  .catalogue .menu__links1, .catalogue .menu__links2 {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .catalogue .menu__links1 a, .catalogue .menu__links2 a {
+    padding-right: 20px;
+  }
+}
+@media screen and (max-width: 767px) {
+  ._container {
+    width: 540px;
+  }
+  .header {
+    height: 160px;
+  }
+  .header__search {
+    margin-left: 53px;
+    width: 250px;
+  }
+  .header__icons {
+    margin-left: 65px;
+  }
+  .header__icon1 {
+    margin-left: 0px;
+  }
+  .header__text {
+    font-size: 18px;
+  }
+  .header__title {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .header__title p {
+    font-size: 25px;
+    margin: 0 0 0 0;
+  }
+  .catalogue__content {
+    flex-direction: column;
+  }
+  .catalogue .menu__container {
+    width: 540px;
+  }
+  .footer__content {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 575px) {
+  ._container {
+    width: 100%;
+  }
+  .header__search {
+    margin-left: 10%;
+    width: 35%;
+    height: 35px;
+  }
+  .header__logo {
+    font-size: 30px;
+  }
+  .header__icons {
+    margin-left: 10%;
+  }
+  .header__icons img {
+    width: 20px;
+  }
+  .header__icon1 {
+    display: none;
+  }
+  .header__text {
+    font-size: 13px;
+    width: 40%;
+  }
+  .catalogue .menu__container {
+    width: 100%;
+  }
+  .footer__content {
+    padding-top: 0px;
+  }
+  .footer__container {
+    background-color: #E1D8D1;
+  }
+}
