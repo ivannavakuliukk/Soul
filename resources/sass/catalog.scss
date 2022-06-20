@@ -99,15 +99,21 @@ body{
   &__container{
     height: 58px;
     display: flex;
-    align-items: center
+    // align-items: center;
   }
   &__content{
-    a{
+    display:flex;
+    align-items: center;
+    p{
       font-family: 'Raleway';
       font-weight: 400;
       font-size: 20px;
-      color:black;
-      margin-right: 220px;
+      color:#C3B39D;
+      height: 100%;
+      line-height: 0px;
+      margin-left:283px;
+      display:flex;
+      align-items: center;
     }
     }
 }

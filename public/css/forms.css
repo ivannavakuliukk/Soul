@@ -103,6 +103,12 @@
   flex-direction: row;
   flex-wrap: wrap;
 }
+.items__content .notfound {
+  font-family: "Raleway";
+  font-weight: 400;
+  margin: 50px 50px;
+  color: black;
+}
 
 .item {
   width: 33.33%;

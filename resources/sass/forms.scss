@@ -105,6 +105,12 @@
       display:flex;
       flex-direction: row;
       flex-wrap: wrap;
+      .notfound{
+        font-family: 'Raleway';
+        font-weight: 400;
+        margin:50px 50px;
+        color: black;
+      }
     }
   }
 .item{

@@ -11,16 +11,18 @@
   <header class = "header">
     <div class = "header__conrainer _container">
       <div class = "header__content">
-        <a class = "header__main_ref" href = "/"><div class = "header__logo">SOUL</div>
-        <div class="header__search">
-          <input type="text" class="header__text" placeholder="Пошук">
-          <a class="header__icon1" href ="">
-            <img src="/icons/search 1.png" alt="">
-          </a>
-        </div>
+        <a class = "header__main_ref" href = "/"><div class = "header__logo">SOUL</div></a>
+          <form method = "get" action = "{{route('search')}}">
+            <div class="header__search">
+              <input type="text" class="header__text" id ="s" name = "s" placeholder="Пошук">
+              <button type = "submit" class="header__icon1">
+                <img src="/icons/search 1.png" alt="">
+              </button>
+            </div>
+          </form>
         <div class = "header__icons"> 
           <a href=""><img src="/icons/user (1) 1.png" class = "header__icon2" alt=""></a>
-          <a href="/review"><img src="/icons/comment.png" class = "header__icon3" alt=""></a>
+          <a href="{{route('review')}}"><img src="/icons/comment.png" class = "header__icon3" alt=""></a>
         </div>
       </div>
     </div>

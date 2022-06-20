@@ -16,14 +16,21 @@ body {
 .go_back__container {
   height: 58px;
   display: flex;
+}
+.go_back__content {
+  display: flex;
   align-items: center;
 }
-.go_back__content a {
+.go_back__content p {
   font-family: "Raleway";
   font-weight: 400;
   font-size: 20px;
-  color: black;
-  margin-right: 220px;
+  color: #C3B39D;
+  height: 100%;
+  line-height: 0px;
+  margin-left: 283px;
+  display: flex;
+  align-items: center;
 }
 
 .catalogue {

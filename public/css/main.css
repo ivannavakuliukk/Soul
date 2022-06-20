@@ -45,6 +45,11 @@ body {
   display: flex;
   align-items: center;
 }
+.header__search button {
+  border: 0;
+  background-color: #ECE9E4;
+  cursor: pointer;
+}
 .header__text {
   border: none;
   background: none;
