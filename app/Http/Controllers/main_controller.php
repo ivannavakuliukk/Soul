@@ -8,6 +8,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Category;
 use App\Models\Color;
 use App\Models\Product;
+use App\Models\Size;
 use App\Models\contacts;
 
 class main_controller extends Controller
@@ -40,6 +41,10 @@ class main_controller extends Controller
         $s = $request->s;
         $products = Product::where('name', 'LIKE', "%{$s}%")->get();
         return view('search', compact('products'), compact('s'));
+    }
+    public function size(){
+        $sizes = Size::get();
+        return view('sizes', compact('sizes'));
     }
     public function catalog(){
         $products = Product::get();

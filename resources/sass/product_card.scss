@@ -83,12 +83,19 @@ body{
     margin-bottom:17px;
   }
   &__sizes{
-    height: 78px;
+    height: 200px;
     padding-left: 20px;
     padding-right: 20px;
     border-bottom:1px solid #D6AB7E;
     display:flex;
     align-items: center;
+    label{
+      font-family: 'Raleway';
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 35px;
+      color:black;
+    }
   }
   &__buy{
     padding-left: 20px;

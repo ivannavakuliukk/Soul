@@ -19421,6 +19421,19 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
 
 /***/ }),
 
+/***/ "./resources/sass/basket.scss":
+/*!************************************!*\
+  !*** ./resources/sass/basket.scss ***!
+  \************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
 /***/ "./resources/sass/main.scss":
 /*!**********************************!*\
   !*** ./resources/sass/main.scss ***!
@@ -19818,6 +19831,7 @@ process.umask = function() { return 0; };
 /******/ 			"css/product_card": 0,
 /******/ 			"css/catalog": 0,
 /******/ 			"css/main": 0,
+/******/ 			"css/basket": 0,
 /******/ 			"css/review": 0,
 /******/ 			"css/forms": 0
 /******/ 		};
@@ -19869,12 +19883,13 @@ process.umask = function() { return 0; };
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["css/product_card","css/catalog","css/main","css/review","css/forms"], () => (__webpack_require__("./resources/js/app.js")))
-/******/ 	__webpack_require__.O(undefined, ["css/product_card","css/catalog","css/main","css/review","css/forms"], () => (__webpack_require__("./resources/sass/main.scss")))
-/******/ 	__webpack_require__.O(undefined, ["css/product_card","css/catalog","css/main","css/review","css/forms"], () => (__webpack_require__("./resources/sass/forms.scss")))
-/******/ 	__webpack_require__.O(undefined, ["css/product_card","css/catalog","css/main","css/review","css/forms"], () => (__webpack_require__("./resources/sass/catalog.scss")))
-/******/ 	__webpack_require__.O(undefined, ["css/product_card","css/catalog","css/main","css/review","css/forms"], () => (__webpack_require__("./resources/sass/product_card.scss")))
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/product_card","css/catalog","css/main","css/review","css/forms"], () => (__webpack_require__("./resources/sass/review.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/product_card","css/catalog","css/main","css/basket","css/review","css/forms"], () => (__webpack_require__("./resources/js/app.js")))
+/******/ 	__webpack_require__.O(undefined, ["css/product_card","css/catalog","css/main","css/basket","css/review","css/forms"], () => (__webpack_require__("./resources/sass/main.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/product_card","css/catalog","css/main","css/basket","css/review","css/forms"], () => (__webpack_require__("./resources/sass/forms.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/product_card","css/catalog","css/main","css/basket","css/review","css/forms"], () => (__webpack_require__("./resources/sass/catalog.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/product_card","css/catalog","css/main","css/basket","css/review","css/forms"], () => (__webpack_require__("./resources/sass/product_card.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/product_card","css/catalog","css/main","css/basket","css/review","css/forms"], () => (__webpack_require__("./resources/sass/review.scss")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/product_card","css/catalog","css/main","css/basket","css/review","css/forms"], () => (__webpack_require__("./resources/sass/basket.scss")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()

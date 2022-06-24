@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <link rel="stylesheet" type="text/css" href="{{URL::asset('css/forms.css')}}">
+<link rel="stylesheet" type="text/css" href="{{URL::asset('css/main.css')}}">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
@@ -21,12 +22,18 @@
             </div>
           </form>
         <div class = "header__icons"> 
-          <a href=""><img src="/icons/user (1) 1.png" class = "header__icon2" alt=""></a>
-          <a href="{{route('review')}}"><img src="/icons/comment.png" class = "header__icon3" alt=""></a>
+          <a href="{{route('basket')}}"><img src="/icons/shopping-cart (3) 1.png" class = "header__icon2" alt=""></a>
+          <a href="{{route('review')}}"><img src="/icons/speech-bubble.png" class = "header__icon3" alt=""></a>
         </div>
       </div>
     </div>
   </header>
+  @if (session()->has('success'))
+    <p class = "message">{{session()->get('success')}}</p>
+  @endif
+  @if (session()->has('warning'))
+  <p class = "message">{{session()->get('warning')}}</p>
+  @endif
   @yield('main_content')
   <footer class = "footer">
     <div class = "footer__container _container">
@@ -37,7 +44,7 @@
           </div>
           <div class = "footer__links1 f_column__links">
             <a href="">Про компанію</a>
-            <a href="">Відгуки</a>
+            <a href="/review">Відгуки</a>
           </div> 
         </div>
         <div class = "footer__column2 f_column">

@@ -19,7 +19,7 @@
     </div>
   @endif
 
-  <form action="/review/check" method = "post">
+  <form action="/review/check" method = "post" class = "user_form">
     @csrf
     <label>Пошта</label>
     <input type = "email" name = "email" id = "email" placeholder= "Введіть свою пошту">

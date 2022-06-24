@@ -1,0 +1,116 @@
+@import url(https://fonts.googleapis.com/css?family=Dancing+Script:regular,500,600,700);
+@import url(https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+._container {
+  width: 1050px;
+}
+
+body {
+  background-color: #ECE9E4;
+}
+
+.basket__content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.basket__content h1 {
+  font-family: "Raleway";
+  font-weight: 500;
+  font-size: 30px;
+  color: #D6AB7E;
+  margin-top: 40px;
+  line-height: 5px;
+}
+.basket__content p {
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 5px;
+}
+.basket__table {
+  margin-top: 40px;
+  margin-bottom: 50px;
+  width: 100%;
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 16px;
+  border-collapse: separate;
+  border-spacing: 10px;
+  border: solid 1px #D6AB7E;
+}
+.basket__table th {
+  width: 210px;
+  padding: 20px 0px;
+}
+.basket__table .with_photo {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding-left: 30px;
+}
+.basket__table .with_photo img {
+  width: 99px;
+  height: 150px;
+}
+.basket__table .with_photo a {
+  font-family: "Raleway";
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  text-decoration: none;
+  color: black;
+  padding-left: 30px;
+}
+.basket__table .with_photo a:hover {
+  text-decoration: underline;
+}
+.basket__table .count {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.basket__table td {
+  width: 350px;
+  text-align: center;
+  padding: 15px 0px;
+  border-top: solid 1px #D6AB7E;
+}
+.basket__table td button {
+  border: none;
+  background-color: #ECE9E4;
+  cursor: pointer;
+}
+.basket__table td button img {
+  width: 10px;
+  height: 10px;
+}
+.basket .order {
+  border: solid;
+  border-color: #D18A39;
+  border-width: 1px;
+  border-radius: 30px;
+  margin-bottom: 60px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 400px;
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 30px;
+  color: #D18A39;
+  text-decoration: none;
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  background-color: #b8762c;
+  color: transparent;
+  text-shadow: 0px 2px 3px #ECE9E4;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+}
+.basket .order:hover {
+  background-color: #9a6426;
+}

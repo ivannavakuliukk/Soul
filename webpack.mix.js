@@ -17,3 +17,5 @@ mix.js('resources/js/app.js', 'public/js')
     .sass('resources/sass/catalog.scss', 'public/css')
     .sass('resources/sass/product_card.scss', 'public/css')
     .sass('resources/sass/review.scss', 'public/css')
+    .sass('resources/sass/basket.scss', 'public/css')
+

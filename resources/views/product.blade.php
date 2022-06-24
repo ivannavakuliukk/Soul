@@ -37,17 +37,33 @@
                 <p class = card__text>{{$product->price}} UAH</p>
               </div>
               <div class = "card__sizes">
-                <a href="" class="size">XS</a>
-                <a href="" class="size"> S</a>
-                <a href="" class="size"> M</a>
-                <a href="" class="size"> L</a>
-                <a href="" class="size">XL</a>
-                <a href="" class="size">XXL</a>
+                <form action ="{{route('basket_add', $product)}}" method="post">
+                  <input type="radio" id="sizeChoice1"
+                  name="size" value="XS" checked class = "size">
+                  <label for="sizeChoice1">XS</label>
+             
+                  <input type="radio" id="sizeChoice2"
+                  name="size" value="S" class = "size">
+                  <label for="sizeChoice2">S</label>
+             
+                  <input type="radio" id="sizeChoice3"
+                  name="size" value="M" class = "size">
+                  <label for="contactChoice3">M</label>
+
+                  <input type="radio" id="sizeChoice4"
+                  name="size" value="L" class = "size">
+                  <label for="sizeChoice4">L</label>
+            
+                  <input type="radio" id="sizeChoice5"
+                  name="size" value="XL" class = "size">
+                  <label for="contactChoice5">XL</label>
+                  <button type = "submit" class="card__btn" >Додати у кошик<img src="/icons/shopping-cart (3) 1.png" alt=""></button>
+                  @csrf
+                </form>
               </div>
               <div class = "card__buy">
                 <p class = card__text1>Знайди свій розмір —</p>
-                <a href="" class="card__findsize">Таблиця розмірів</a>
-                <a href="" class="card__btn">Додати у кошик<img src = "icons/shopping-cart (3) 1.png"></a>
+                <a href="/choose/sizes" class="card__findsize">Таблиця розмірів</a>
               </div>
             </div>
           </div>

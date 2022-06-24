@@ -10,7 +10,10 @@
         <p>{{$product->name}}</p>
         <div class = "iconprice">
           <p>₴{{$product->price}}</p>
-          <a href="{{route('product', $product->code)}}"><img src="/icons/shopping-cart (3) 1.png" alt=""></a>
+          <form action ="{{route('basket_add', $product)}}" method="post">
+            <button type = "submit" ><img src="/icons/shopping-cart (3) 1.png" alt=""></button>
+            @csrf
+          </form>
         </div>
       </div>
     </div>
